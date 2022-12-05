@@ -31,7 +31,7 @@ let movies = [
     }
   ];
 
-  const caraousel = document.querySelector('.caraousel');
+const carousel = document.querySelector('.carousel');
 let sliders = [];
 
 let slideIndex = 0; // track the current slide
@@ -56,7 +56,7 @@ const createSlide = () => {
   content.appendChild(p);
   slide.appendChild(content);
   slide.appendChild(imgElement);
-  caraousel.appendChild(slide);
+  carousel.appendChild(slide);
 
   // setting up image
   imgElement.src = movies[slideIndex].image;
